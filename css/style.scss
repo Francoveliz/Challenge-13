@@ -40,6 +40,48 @@ header {
   background: #fff;
   padding: 0 $pad;
   height: 70px;
+
+
+  nav {
+    height: calc(100vh - 70px);
+    width: 100%;
+    background-color: $veryDarkViolet;
+    position: fixed;
+    background-image: url("../images/bg-pattern-mobile-nav.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    top: 70px;
+    left: 0;
+    transition: 0.5s ease;
+    transform: translateX(100%);
+
+    ul {
+      list-style: none;
+      padding: 0;
+      color: $veryLightGray;
+      font-size: 1.2rem;
+      padding-top: 1.5em;
+      text-transform: uppercase;
+
+
+      li {
+
+        padding: 8px;
+        width: 85%;
+        margin: auto;
+        margin-bottom: 1.5rem;
+
+        &:hover,
+        &:active {
+          border: 2px solid $veryLightGray;
+        }
+      }
+    }
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
 }
 
 .menu-btn {
