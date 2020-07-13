@@ -1,5 +1,6 @@
 @import "container";
 @import "variables";
+@import "desktop-version";
 
 :root {
   font-size: 16px !important;
@@ -40,9 +41,6 @@ header {
   background: #fff;
   padding: 0 $pad;
   height: 70px;
-
-
-
 
   nav {
     height: calc(100vh - 70px);
@@ -124,17 +122,18 @@ header {
 
 /* Hamburger menu animation */
 .menu-btn.open .menu-btn__burger {
-  transform: translateX(-25px);
+  transform: translateX(-10px);
   background: transparent;
   box-shadow: none;
 
+  /*-15*/
   &::before {
-    transform: rotate(45deg) translate(17.5px, -17.5px);
+    transform: rotate(45deg) translate(7px, -7px);
     background: #000;
   }
 
   &::after {
-    transform: rotate(-45deg) translate(17.5px, 17.5px);
+    transform: rotate(-45deg) translate(7px, 7px);
     background: #000;
   }
 }
@@ -155,10 +154,10 @@ header {
 
   .home-page__content {
     padding: 4rem $pad;
-    background-image: url("../images/bg-pattern-intro-left-mobile.svg"), url("../images/bg-pattern-intro-right-mobile.svg");
+    background-image: url("../images/bg-pattern-intro-left-mobile.svg");
     background-repeat: no-repeat;
-    background-position: 0 0, 100% 100%;
-    overflow: visible;
+    background-position: 0 0;
+    position: relative;
 
     p {
       margin-bottom: 2rem;
@@ -166,6 +165,12 @@ header {
 
     button {
       @extend %button;
+    }
+
+    img {
+      position: absolute;
+      right: 0;
+      bottom: -11rem;
     }
   }
 }

@@ -167,22 +167,23 @@ header nav ul li:hover, header nav ul li:active {
 
 /* Hamburger menu animation */
 .menu-btn.open .menu-btn__burger, .menu-btn.open .menu-btn__burger::before, .menu-btn.open .menu-btn__burger::after {
-  -webkit-transform: translateX(-25px);
-          transform: translateX(-25px);
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
   background: transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
+  /*-15*/
 }
 
 .menu-btn.open .menu-btn__burger::before {
-  -webkit-transform: rotate(45deg) translate(17.5px, -17.5px);
-          transform: rotate(45deg) translate(17.5px, -17.5px);
+  -webkit-transform: rotate(45deg) translate(7px, -7px);
+          transform: rotate(45deg) translate(7px, -7px);
   background: #000;
 }
 
 .menu-btn.open .menu-btn__burger::after {
-  -webkit-transform: rotate(-45deg) translate(17.5px, 17.5px);
-          transform: rotate(-45deg) translate(17.5px, 17.5px);
+  -webkit-transform: rotate(-45deg) translate(7px, 7px);
+          transform: rotate(-45deg) translate(7px, 7px);
   background: #000;
 }
 
@@ -205,14 +206,20 @@ header nav ul li:hover, header nav ul li:active {
 
 .home-page .home-page__content {
   padding: 4rem 1.5rem;
-  background-image: url("../images/bg-pattern-intro-left-mobile.svg"), url("../images/bg-pattern-intro-right-mobile.svg");
+  background-image: url("../images/bg-pattern-intro-left-mobile.svg");
   background-repeat: no-repeat;
-  background-position: 0 0, 100% 100%;
-  overflow: visible;
+  background-position: 0 0;
+  position: relative;
 }
 
 .home-page .home-page__content p {
   margin-bottom: 2rem;
+}
+
+.home-page .home-page__content img {
+  position: absolute;
+  right: 0;
+  bottom: -11rem;
 }
 
 .we-are-different {
