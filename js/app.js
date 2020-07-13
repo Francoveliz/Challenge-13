@@ -1,18 +1,27 @@
 const menuBtn = document.querySelector(".menu-btn");
 const navBar = document.getElementById("nav-bar");
-const headerBar = document.querySelector("body");
 let menuOpen = false;
+
+/* disable body scroll function */
+function noScroll() {
+    window.scrollTo(0, 0);
+}
+
 menuBtn.addEventListener("click", () => {
     /* nav animation */
     navBar.classList.toggle("nav-active");
     /* hamburger button animation */
     if (!menuOpen) {
+        // listener to disable scroll
+        window.addEventListener('scroll', noScroll);
         menuBtn.classList.add("open");
-        headerBar.style.position = "fixed";
+
         menuOpen = true;
     } else {
+        /* close hamburger menu */
         menuBtn.classList.remove("open");
-        headerBar.style.position = "static";
         menuOpen = false;
+        // enable scroll
+        window.removeEventListener('scroll', noScroll);
     }
 });
