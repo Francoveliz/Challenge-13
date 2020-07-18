@@ -23,6 +23,7 @@
 <body>
   <div class="main">
     <div class="container">
+      <!-- Header section-->
       <header>
         <img src="images/logo.svg" alt="">
         <nav id="nav-bar">
@@ -33,25 +34,35 @@
             <li>View plans</li>
           </ul>
         </nav>
-        <div class="menu-btn">
+        <div id="menu-btn" class="menu-btn">
           <div class="menu-btn__burger"></div>
         </div>
-
       </header>
+      <!-- Home page section -->
       <div class="home-page">
         <div class="home-page__cover">
-          <img src="images/image-intro-mobile.jpg" alt="">
+          <img class="mobile" src="images/image-intro-mobile.jpg" alt="">
+          <img class="desktop" src="images/image-intro-desktop.jpg" alt="">
         </div>
         <div class="home-page__content">
-          <h1>Humanizing your insurance.</h1>
-          <p>Get your life insurance coverage easier and faster. We blend our expertise
-            and technology to help you find the plan that’s right for you. Ensure you
-            and your loved ones are protected.</p>
-          <button>view plans</button>
-          <img src="images/bg-pattern-intro-right-mobile.svg" alt="">
+          <div>
+            <hr class="desktop">
+            <h1>Humanizing your insurance.</h1>
+            <p>Get your life insurance coverage easier and faster. We blend our expertise
+              and technology to help you find the plan that’s right for you. Ensure you
+              and your loved ones are protected. </p>
+            <button>view plans</button>
+          </div>
+          <img class="mobile" src="images/bg-pattern-intro-right-mobile.svg" alt="">
+
+          <img class="desktop bg-intro-right" src="images/bg-pattern-intro-right-desktop.svg" alt="">
+
+
         </div>
       </div>
+      <!-- we are different section-->
       <div class="we-are-different">
+        <img class="desktop bg-intro-left" src="images/bg-pattern-intro-left-desktop.svg" alt="">
         <hr>
         <h2>We’re different</h2>
         <div class="card__container">
@@ -100,47 +111,46 @@
               <i class="fab fa-instagram"></i>
             </div>
           </div>
-          <hr>
         </div>
+        <div class="footer__nav-container">
+          <div class="footer__nav">
+            <h4>Our company</h4>
+            <ul>
+              <li>How we work</li>
+              <li>Why Insure?</li>
+              <li>View plans</li>
+              <li>Reviews</li>
+            </ul>
+          </div>
 
-        <div class="footer__nav">
-          <h4>Our company</h4>
-          <ul>
-            <li>How we work</li>
-            <li>Why Insure?</li>
-            <li>View plans</li>
-            <li>Reviews</li>
-          </ul>
+          <div class="footer__nav">
+            <h4>Help me</h4>
+            <ul>
+              <li>FAQ</li>
+              <li>Terms of use</li>
+              <li>Privacy policy</li>
+              <li>Cookies</li>
+            </ul>
+          </div>
+
+          <div class="footer__nav">
+            <h4>Contact</h4>
+            <ul>
+              <li>Sales</li>
+              <li>Support</li>
+              <li>Live chat</li>
+            </ul>
+          </div>
+
+          <div class="footer__nav">
+            <h4>Others</h4>
+            <ul>
+              <li>Careers</li>
+              <li>Press</li>
+              <li>Licenses</li>
+            </ul>
+          </div>
         </div>
-
-        <div class="footer__nav">
-          <h4>Help me</h4>
-          <ul>
-            <li>FAQ</li>
-            <li>Terms of use</li>
-            <li>Privacy policy</li>
-            <li>Cookies</li>
-          </ul>
-        </div>
-
-        <div class="footer__nav">
-          <h4>Contact</h4>
-          <ul>
-            <li>Sales</li>
-            <li>Support</li>
-            <li>Live chat</li>
-          </ul>
-        </div>
-
-        <div class="footer__nav">
-          <h4>Others</h4>
-          <ul>
-            <li>Careers</li>
-            <li>Press</li>
-            <li>Licenses</li>
-          </ul>
-        </div>
-
       </footer>
     </div>
 
